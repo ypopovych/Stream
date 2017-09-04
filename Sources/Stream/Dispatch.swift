@@ -90,7 +90,7 @@ public class DispatchReadableSpi : RawReadableSpi {
                 self.reading = false
             }
             
-            if CError.isError(error) {
+            if CError.isError(code: error) {
                 //TODO: a way to report error
             }
             

@@ -312,9 +312,9 @@
 		65FD8F651CDC90E00046D5D6 = {
 			isa = PBXGroup;
 			children = (
+				92E445BF1F5DBAD9003A295A /* Sources */,
+				92E445C01F5DBAFB003A295A /* Tests */,
 				6512906C1CDC92F800D3C387 /* Frameworks */,
-				65FD8F711CDC90E00046D5D6 /* Stream */,
-				65FD8F7D1CDC90E00046D5D6 /* StreamTests */,
 				65FD8F701CDC90E00046D5D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -353,6 +353,22 @@
 				65FD8F801CDC90E00046D5D6 /* Info.plist */,
 			);
 			path = StreamTests;
+			sourceTree = "<group>";
+		};
+		92E445BF1F5DBAD9003A295A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65FD8F711CDC90E00046D5D6 /* Stream */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		92E445C01F5DBAFB003A295A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				65FD8F7D1CDC90E00046D5D6 /* StreamTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,7 +625,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Stream/Info.plist;
+				INFOPLIST_FILE = Sources/Stream/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.crossroadlabs.Stream;
@@ -634,7 +650,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Stream/Info.plist;
+				INFOPLIST_FILE = Sources/Stream/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.crossroadlabs.Stream;
@@ -651,7 +667,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = StreamTests/Info.plist;
+				INFOPLIST_FILE = Tests/StreamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.crossroadlabs.StreamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -666,7 +682,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = StreamTests/Info.plist;
+				INFOPLIST_FILE = Tests/StreamTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.crossroadlabs.StreamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

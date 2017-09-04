@@ -71,3 +71,14 @@ class StreamTests: XCTestCase {
     }
     
 }
+
+#if os(Linux)
+extension StreamTests {
+	static var allTests : [(String, (StreamTests) -> () throws -> Void)] {
+		return [
+			("testExample", testExample),
+			("testPerformanceExample", testPerformanceExample),
+		]
+	}
+}
+#endif
