@@ -45,7 +45,7 @@ class StreamTests: XCTestCase {
             }.onSuccess { strdata in
                 print(strdata)
         }*/
-        let w = RawWritableTest()
+        //let w = RawWritableTest()
         /*File.createReadStream(filename: "/etc/passwd").onSuccess { s in
             s.pipe(writable: w)
         }*/
@@ -53,14 +53,14 @@ class StreamTests: XCTestCase {
         //test.pipe(writable: w)
         
         
-        let expectation = self.expectation(description: "some")
+        //let expectation = self.expectation(description: "some")
         /*test.drain().onSuccess { result in
             print(result)
             XCTAssertEqual(result, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
             //expectation.fulfill()
         }*/
         
-        self.waitForExpectations(timeout: 20000, handler: nil)
+        //self.waitForExpectations(timeout: 20000, handler: nil)
     }
     
     func testPerformanceExample() {

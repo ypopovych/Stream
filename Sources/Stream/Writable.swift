@@ -163,7 +163,7 @@ public class WritableImpl<Spi: WritableSpiProtocol> : WritableEventEmitterProtoc
     }
 }
 
-public protocol Writable : WritableEventEmitterProtocol, AnyObject {
+public protocol Writable : class, WritableEventEmitterProtocol {
     associatedtype WritableSpi : WritableSpiProtocol
     
     associatedtype OutElement = WritableSpi.Element
